@@ -1,0 +1,189 @@
+* {
+    margin: auto;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #87CEEB, #4682B4);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    min-height: 70vh;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 25px blue;
+}
+
+.fir {
+    margin-top: 100px;
+}
+
+.fir label {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fir input {
+    height: 25px;
+    width: 220px;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.btn {
+    margin-top: -100px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: aqua;
+    scale: 1.1;
+    transition-duration: 0.2s;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.errmsg {
+    color: red;
+    margin-top: -67px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.r {
+    display: flex;
+    height: 23vh;
+    width: 35vw;
+    font-size: 45px;
+    margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: x-large;
+        text-shadow: 2px 2px 15px blue;
+    }
+
+    .fir {
+        margin-top: 50px;
+    }
+
+    .fir label {
+        font-size: large;
+    }
+
+    .fir input {
+        width: 80vw;
+        max-width: 300px;
+        font-size: medium;
+    }
+
+    .errmsg {
+        font-size: 25px;
+    }
+
+    .r {
+        width: 80vw;
+        font-size: 50px;
+    }
+
+    .col {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90vw;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: large;
+        text-shadow: 1px 1px 10px blue;
+    }
+
+    .fir input {
+        width: 90vw;
+        font-size: small;
+    }
+
+    .errmsg {
+        font-size: 20px;
+    }
+
+    .r {
+        width: 90vw;
+        font-size: 40px;
+    }
+
+    .col {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95vw;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: medium;
+        text-shadow: 1px 1px 5px blue;
+    }
+
+    .fir input {
+        width: 95vw;
+        font-size: small;
+    }
+
+    .errmsg {
+        font-size: 18px;
+    }
+
+    .r {
+        width: 95vw;
+        font-size: 30px;
+    }
+
+    .col {
+        margin-top: 10px;
+    }
+}
